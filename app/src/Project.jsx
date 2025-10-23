@@ -6,7 +6,7 @@ import Alldoctor from "./Alldoctor.jsx";
 import Contact from "./Contact.jsx";
 import About from "./About.jsx";
 import Home from "./Home.jsx";
-import Homepage from "./Homepage.jsx";
+import Hero from "./Hero.jsx";
 
 import Login from "./Login.jsx";
 
@@ -26,24 +26,25 @@ function Project() {
         />
         
       </div>
+      
     
-        
 
- <Routes>
- 
-  <Route path="/Home" element={<Home/>} />
-  <Route path="/Alldoctor" element={<Alldoctor/>} />
-  {/* <Route index element={<Homepage/>} /> */}
-  
+   <Routes>
+  <Route path="/Home" element={<Home />} />   
+  <Route path="/Alldoctor" element={<Alldoctor />} />
   <Route path="/About" element={<About />} />
   <Route path="/Contact" element={<Contact />} />
-  <Route path="/Homepage" element={<Homepage />} />
-  
-  
-  
   <Route path="/login" element={<Login />} />
   <Route path="/signup" element={<Signup />} />
-</Routes> 
+</Routes>
+
+<Hero/>
+<Alldoctor/>
+
+
+        
+
+ 
      
         
      

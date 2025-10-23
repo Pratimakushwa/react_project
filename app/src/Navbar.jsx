@@ -13,7 +13,7 @@ const Navbar = (props) => {
           alt="logo"
           className="w-8 h-8"
         />
-        <h2 className="text-2xl font-semibold text-blue-600"><Link to ="/Homepage">{props.link4}</Link></h2>
+        <h2 className="text-2xl font-semibold text-blue-600"><Link to ="/Home">{props.link4}</Link></h2>
       </div>
 
       {/* Links */}
