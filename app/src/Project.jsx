@@ -9,7 +9,7 @@ import Home from "./Home.jsx";
 import Hero from "./Hero.jsx";
 
 import Login from "./Login.jsx";
-
+import Footer from "./Footer.jsx";
 function Project() {
   return (
     <>
@@ -40,6 +40,10 @@ function Project() {
 
 <Hero/>
 <Alldoctor/>
+<About/>
+<Contact/>
+<Footer/>
+
 
 
         

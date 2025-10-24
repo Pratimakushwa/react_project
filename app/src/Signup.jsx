@@ -28,7 +28,7 @@ const Signup = () => {
     alert("Signup Successful!");
 
     // Redirect to Home / Project page
-    navigate("/project");
+    navigate("/Home");
   };
 
   return (
