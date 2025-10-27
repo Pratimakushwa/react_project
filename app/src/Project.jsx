@@ -38,11 +38,11 @@ function Project() {
   <Route path="/signup" element={<Signup />} />
 </Routes>
 
-<Hero/>
-<Alldoctor/>
+<Hero/> 
+ <Alldoctor/>
 <About/>
-<Contact/>
-<Footer/>
+<Contact/> 
+  <Footer/> 
 
 
 

@@ -22,7 +22,7 @@ const Login = () => {
     if (!isLoggedIn) {
       // First login
       localStorage.setItem("userEmail", formData.email);
-      alert("Login Successful!");
+      alert("singup  Successful!");
       setIsLoggedIn(true);
     } 
     
@@ -35,10 +35,21 @@ const Login = () => {
     <div className="flex justify-center items-center min-h-screen bg-gradient-to-r from-blue-400 to-indigo-600">
       <div className="bg-white shadow-lg rounded-2xl p-8 w-96">
         <h2 className="text-2xl font-bold text-center text-blue-600 mb-6">
-          Login
+          signup
         </h2>
 
         <form onSubmit={handleSubmit} className="space-y-4">
+           <div>
+            <label className="block text-gray-700 font-semibold mb-1">Name</label>
+            <input
+              type="text"
+              name="name"
+              placeholder="Enter your name"
+              value={formData.name}
+              onChange={handleChange}
+              className="w-full border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-400"
+            />
+          </div>
           <div>
             <label className="block text-gray-700 font-semibold mb-1">
               Email
@@ -61,13 +72,13 @@ const Login = () => {
             type="submit"
             className="w-full bg-blue-500 text-white font-semibold py-2 rounded-lg hover:bg-blue-600 transition duration-300"
           >
-            {isLoggedIn ? "Go to Signup" : "Login"}
+            {isLoggedIn ? "Go to login" : "signup"}
           </button>
         </form>
 
         <p className="text-center text-gray-600 text-sm mt-4">
           Don’t have an account?{" "}
-          <a href="/signup" className="text-blue-600 hover:underline">
+          <a href="/login" className="text-blue-600 hover:underline">
             Sign up
           </a>
         </p>

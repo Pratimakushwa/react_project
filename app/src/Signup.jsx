@@ -25,7 +25,7 @@ const Signup = () => {
 
     // Example: Store in localStorage
     localStorage.setItem("userData", JSON.stringify(formData));
-    alert("Signup Successful!");
+    alert("login Successful!");
 
     // Redirect to Home / Project page
     navigate("/Home");
@@ -35,7 +35,7 @@ const Signup = () => {
     <div className="flex justify-center items-center min-h-screen bg-gradient-to-r from-purple-400 to-pink-500">
       <div className="bg-white shadow-lg rounded-2xl p-8 w-96">
         <h2 className="text-2xl font-bold text-center text-purple-600 mb-6">
-          Signup
+          login
         </h2>
 
         <form onSubmit={handleSubmit} className="space-y-4">
@@ -79,7 +79,7 @@ const Signup = () => {
             type="submit"
             className="w-full bg-purple-500 text-white font-semibold py-2 rounded-lg hover:bg-purple-600 transition duration-300"
           >
-            Signup
+            login
           </button>
         </form>
 
