@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <>
       {/* Heading */}
-      <h1 className="text-4xl font-extrabold text-center py-10 text-indigo-600 drop-shadow-md">
+      <h1 className="text-4xl font-extrabold text-center py-10 text-indigo-600 drop-shadow-md pt-24">
         Contact Us
       </h1>
 
